@@ -1,0 +1,108 @@
+@import "variables";
+
+
+
+.slideshow {
+    max-width: 50vw;
+    position: relative;
+    margin: auto;
+    padding-top: 3rem;
+    background-color: $secondary-colour;
+    color: $secondary-text;
+
+    .slides {
+    display: none;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 20px;
+        color: $primary-text;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+
+
+        &:hover {
+            background-color:#000000;
+            opacity: 0.7;
+        }
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+}
+
+.dot {
+    text-align: center;
+
+    .dot-indicators {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+
+        &:hover {
+            background-color: black;
+        }
+    }
+
+.active {
+        background-color: black;
+    }
+
+button {
+        background-color: $secondary-colour;
+        color: $secondary-text;
+        border: 3px solid $primary-colour;
+        padding: 10px 15px;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        font-size: 2.5vw;
+        border-radius: 12px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+
+        @include media-lg {
+            font-size: 30px;
+        }
+
+        &:hover {
+            background-color: $primary-colour;
+            color: $primary-text;
+        }
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  img {
+      width: 100%;
+      border-radius: 10px;
+  }

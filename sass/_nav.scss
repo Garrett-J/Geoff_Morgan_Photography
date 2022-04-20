@@ -1,0 +1,91 @@
+@import "variables";
+
+
+
+/**Menu Button for md/sm screens**/
+
+.menu-btn {
+    z-index: 3;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+
+    &__line {
+        position: absolute;
+        right: 0;
+        top: 0.8rem;
+        width: 25px;
+        height: 3px;
+        background-color: $light-text;
+
+        &::before {
+            position: absolute;
+            content:'';
+            top: -8px;
+            width: 30px;
+            height: 3px;
+            background-color: $light-text;
+        }
+
+        &::after {
+            position: absolute;
+            content:'';
+            top: 8px;
+            width: 30px;
+            height: 3px;
+            background-color: $light-text;
+        }
+    }
+}
+
+.logo {
+    z-index: 2;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 1rem;
+
+    .logo-text {
+        color: $light-text;
+        font-size: 1.5rem;
+        padding-right: 0px;
+        padding-left: 1em;
+    }
+}
+
+/**Navigation Menu**/
+.nav {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+    background: $dark-color;
+
+    .menu-nav {
+        padding: 4rem 0 1rem 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        padding-right: 1rem;
+        overflow: hidden;
+
+        &__item {
+            z-index: 2;
+            list-style-type: none;
+            padding: 0.5rem 0 0.5rem 2rem;
+
+            &.open {
+                display: none;
+            }
+        }
+        
+        &__link {
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+    }
+}

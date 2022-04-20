@@ -1,0 +1,229 @@
+@import "nav";
+@import "responsive";
+@import "variables";
+@import "footer";
+@import "slideshow";
+
+
+
+body {
+    margin: 0;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color:$light-text;
+    text-decoration: none;
+
+	&:hover{
+    color:$light-text;
+    text-decoration:none;
+    cursor:pointer;
+	}
+}
+
+ul {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+//BIO SECTION//
+.bio {
+    background-color: $primary-colour;
+    .bio-body {
+        padding: 1rem 2rem;
+        display: flex;
+
+        &__pic {
+            width: auto;
+            height: auto;
+            max-width: 30%;
+            align-self: center;
+            border-radius: 50%;
+        }
+
+        &__text {
+            color: $primary-text;
+            display: flex;
+           font-size: 2rem;
+          padding-right: 1rem;
+           align-self: center;
+           line-height: 3.5rem;
+        }
+    }
+}
+
+//PORTFOLIO SECTION + _slideshow.scss//
+.portfolio {
+    background-color: $secondary-colour;
+    color: $secondary-text;
+}
+
+//CONTACT SECTION//
+.contact {
+
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1vh 10vw 5vh;
+    background-color: $primary-colour;
+    color: $primary-text;
+
+    @include media-lg {
+        align-items: center;
+        flex-direction: row;
+    }
+    .contact-title {
+        padding-top: 1vh;
+        margin: 0 auto;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 3.5rem;
+
+        @include media-lg {
+            text-align: left;
+            width: 35vw;
+            padding-left: 20vw;
+        }
+    }
+
+    .wpforms-form .wpforms-field-label {
+        display:block;
+        text-align: center;
+        padding-bottom: 1vh;
+        padding-top: 4vh;
+        font-weight: 700;
+
+        @include media-lg {
+            text-align: left;
+        }
+    }
+
+    .wpforms-container input[type=date], .wpforms-container input[type=datetime], .wpforms-container input[type=datetime-local], .wpforms-container input[type=email], .wpforms-container input[type=month], .wpforms-container input[type=number], .wpforms-container input[type=password], .wpforms-container input[type=range], .wpforms-container input[type=search], .wpforms-container input[type=tel], .wpforms-container input[type=text], .wpforms-container input[type=time], .wpforms-container input[type=url], .wpforms-container input[type=week], .wpforms-container select, .wpforms-container textarea {
+        font-size: 16px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: none;
+
+        @include media-lg {
+            width: 25vw;
+            flex-direction: row;
+            font-size: 16px;
+            padding-right: 3rem;
+        }
+    }
+
+    .wpforms-container input.wpforms-field-small, .wpforms-container select.wpforms-field-small, .wpforms-container .wpforms-field-row.wpforms-field-small {
+        padding: 10px 0;
+        width: 100%;
+        border: none;
+
+        @include media-lg {
+            width: 20vw;
+        }
+    }
+
+    .wpforms-form .wpforms-field.wpforms-field-textarea textarea {
+        padding: 10px 0;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        height: 20vh;
+    }
+
+    .wpforms-submit {
+        display: block;
+        margin: 2vh auto 0 auto;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        font-weight: 550;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        outline: none;
+        color: $secondary-text;
+
+        &:hover {
+            background-color: $primary-text;
+            transform: translateY(-5px);
+        }
+
+        &:active {
+            transform: translateY(-1px);
+        }
+    }
+
+    .wpforms-container label.wpforms-error {
+        display: block;
+        padding-top: 1vh;
+        text-align: center;
+
+        @include media-lg {
+            text-align: left;
+        }
+    }
+
+    .wpforms-field-limit-text {
+        padding-bottom: 1vh;
+        text-align: center;
+
+        @include media-lg {
+            text-align: left;
+        }
+    }
+}
+
+//INVESTMENT SECTION//
+.investment {
+    padding: 5vh 5vw 5vh 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: $secondary-colour;
+    color: $secondary-text;
+    display: flex;
+    flex-direction: column;
+
+    @include media-lg {
+        flex-direction: row;
+    }
+}
+
+
+.tier-wrapper {
+    margin: 0 auto;
+    padding-right:5px;
+    padding-left:5px;
+}
+.tier {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-style: double;
+    border-width: 2px;
+    border-color: $primary-colour;
+    padding: 5px 70px 5px;
+    text-align: center;
+    width: 145px;
+    display:block;
+    overflow: hidden;
+    
+
+    @include media-lg {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+        .tier-body__price {
+            font-weight: 900;
+            font-size:40px;
+    }
+        .tier-body__text {
+            font-weight: 500;
+            line-height: 1.5rem;
+            display: flex;
+        }
+}
