@@ -71,7 +71,7 @@ get_header();
         <span class="dot-indicators" onclick="currentSlide(2)"></span>
         <span class="dot-indicators" onclick="currentSlide(3)"></span>
         <br>
-        <a href="www.google.com"><button type="button">Click here to check out my full portfolio!</button></a>
+        <a href="http://localhost:81/wordpress/portfolio"><button type="button">Click here to check out my full portfolio!</button></a>
     </div>
 </section>
 
