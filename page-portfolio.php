@@ -43,6 +43,36 @@ get_header();
 		</ul>
         </nav>
 
+        <div class="row">
+            <div class="row-column">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_1'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_2'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_3'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_4'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_5'); ?>" alt="">
+            </div>
+            <div class="row-column">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_6'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_7'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_8'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_9'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_10'); ?>" alt="">
+            </div>
+            <div class="row-column">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_11'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_14'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_12'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_13'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_15'); ?>" alt="">
+            </div>
+            <div class="row-column">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_16'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_17'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_18'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_19'); ?>" alt="">
+                <img class= "row-column__img" src="<?php the_field('portfolio_pic_20'); ?>" alt="">
+            </div>
+        </div>
 
 
 
