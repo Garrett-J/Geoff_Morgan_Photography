@@ -23,7 +23,7 @@
 				<a class="footer-links__icon" href="https://Gmail.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>../../../img/email.png" alt="Email"></a>
 		</div>
 		<div class="footer-info">
-			<p class="footer-info__text"> © Geoff Morgan Photography, 2022  - Made by Garrett Johnson</p>
+			<p class="footer-info__text"> © Geoff Morgan Photography, 2022  - Made with 🍺 by Garrett Johnson</p>
 		</div>
 	</div>
 
