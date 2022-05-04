@@ -26,17 +26,17 @@ get_header();
 	<nav class="nav">
         <ul class="menu-nav">
             <li class="menu-nav__item">
-                <a href="http://localhost:81/wordpress/home/#portfolio" class="menu-nav__link">
+                <a href="localhost:81/wordpress/home/#portfolio" class="menu-nav__link">
                 Portfolio
                 </a>
             </li>
             <li class="menu-nav__item">
-                <a href="http://localhost:81/wordpress/home/#contact" class="menu-nav__link">
+                <a href="localhost:81/wordpress/home/#contact" class="menu-nav__link">
                 Contact Me
                 </a>
             </li>
             <li class="menu-nav__item active">
-                <a href="http://localhost:81/wordpress/home/#investment" class="menu-nav__link">
+                <a href="localhost:81/wordpress/home/#investment" class="menu-nav__link">
                 Investment
                 </a>
             </li>
@@ -71,7 +71,7 @@ get_header();
         <span class="dot-indicators" onclick="currentSlide(2)"></span>
         <span class="dot-indicators" onclick="currentSlide(3)"></span>
         <br>
-        <a href="http://localhost:81/wordpress/portfolio"><button type="button">Click here to check out my full portfolio!</button></a>
+        <a href="localhost:81/wordpress/home/portfolio"><button type="button">Click here to check out my full portfolio!</button></a>
     </div>
 </section>
 
