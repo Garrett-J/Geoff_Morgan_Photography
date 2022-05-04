@@ -367,6 +367,7 @@ h1 {
 
 .contact .wpforms-container input[type=date], .contact .wpforms-container input[type=datetime], .contact .wpforms-container input[type=datetime-local], .contact .wpforms-container input[type=email], .contact .wpforms-container input[type=month], .contact .wpforms-container input[type=number], .contact .wpforms-container input[type=password], .contact .wpforms-container input[type=range], .contact .wpforms-container input[type=search], .contact .wpforms-container input[type=tel], .contact .wpforms-container input[type=text], .contact .wpforms-container input[type=time], .contact .wpforms-container input[type=url], .contact .wpforms-container input[type=week], .contact .wpforms-container select, .contact .wpforms-container textarea {
   font-size: 16px;
+  padding: 5px 3px;
   width: 100%;
   margin: 0 auto;
   border-radius: 10px;
@@ -382,14 +383,15 @@ h1 {
   }
 }
 
-.contact .wpforms-container input.wpforms-field-small, .contact .wpforms-container select.wpforms-field-small, .contact .wpforms-container .wpforms-field-row.wpforms-field-small {
-  padding: 10px 0;
+.contact .wpforms-container .wp-forms-field-medium input.wpforms-field-small, .contact .wpforms-container select.wpforms-field-small, .contact .wpforms-container .wpforms-field-row.wpforms-field-small {
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 3px;
   width: 100%;
   border: none;
 }
 
 @media screen and (min-width: 992px) {
-  .contact .wpforms-container input.wpforms-field-small, .contact .wpforms-container select.wpforms-field-small, .contact .wpforms-container .wpforms-field-row.wpforms-field-small {
+  .contact .wpforms-container .wp-forms-field-medium input.wpforms-field-small, .contact .wpforms-container select.wpforms-field-small, .contact .wpforms-container .wpforms-field-row.wpforms-field-small {
     width: 20vw;
   }
 }
