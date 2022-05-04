@@ -70,16 +70,18 @@ button {
         background-color: $secondary-colour;
         color: $secondary-text;
         border: 3px solid $primary-colour;
-        padding: 10px 15px;
+        padding: 10px 5px;
         margin-top: 2rem;
         margin-bottom: 2.5rem;
-        font-size: 2.5vw;
+        font-size: 20px;
         border-radius: 12px;
         cursor: pointer;
         transition-duration: 0.5s;
 
         @include media-lg {
             font-size: 30px;
+            padding: 10px 15px;
+
         }
 
         &:hover {

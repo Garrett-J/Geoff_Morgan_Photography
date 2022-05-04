@@ -1,3 +1,5 @@
+
+
 @import "nav";
 @import "responsive";
 @import "variables";
@@ -38,13 +40,24 @@ h1 {
     .bio-body {
         padding: 1rem 2rem;
         display: flex;
+        flex-direction: column;
+
+        @include media-lg {
+            flex-direction: row;
+        }
 
         &__pic {
             width: auto;
             height: auto;
-            max-width: 30%;
+            max-width: 50%;
             align-self: center;
             border-radius: 50%;
+            margin: 0 auto;
+
+            @include media-lg {
+                margin: auto;
+                max-width: 30%;
+            }
         }
 
         &__text {
@@ -53,7 +66,18 @@ h1 {
            font-size: 2rem;
           padding-right: 1rem;
            align-self: center;
-           line-height: 3.5rem;
+           line-height: 2.75rem;
+           margin: 0 auto;
+           text-align: center;
+           padding-bottom: 1rem;
+
+           @include media-lg {
+               margin: auto;
+               text-align: left;
+               line-height: 3.5rem;
+               padding-bottom: 0;
+
+           }
         }
     }
 }
@@ -82,12 +106,13 @@ h1 {
         margin: 0 auto;
         font-size: 2rem;
         text-align: center;
-        line-height: 3.5rem;
+        line-height: 2.75rem;
 
         @include media-lg {
             text-align: left;
             width: 35vw;
             padding-left: 20vw;
+            line-height: 3.5rem;
         }
     }
 
@@ -268,3 +293,4 @@ h1 {
        margin-bottom: 5px;
    }
 }
+

@@ -1,7 +1,6 @@
 @import "variables";
 
 
-
 /**Menu Button for md/sm screens**/
 
 .menu-btn {
@@ -12,6 +11,7 @@
     height: 20px;
     width: 28px;
     cursor: pointer;
+    
 
     &__line {
         position: absolute;
@@ -47,12 +47,14 @@
     left: 1rem;
     right: 1rem;
     top: 1rem;
+    padding-bottom: 2rem;
+    padding-right: 7rem;
 
     .logo-text {
         color: $light-text;
         font-size: 1.5rem;
-        padding-right: 0px;
-        padding-left: 1em;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 
@@ -66,26 +68,34 @@
     background: $dark-color;
 
     .menu-nav {
-        padding: 4rem 0 1rem 0;
+        padding: 5rem 0 1rem 0;
         list-style-type: none;
         display: flex;
         flex-direction: column;
         padding-right: 1rem;
         overflow: hidden;
 
+
         &__item {
+            display: none;
             z-index: 2;
             list-style-type: none;
             padding: 0.5rem 0 0.5rem 2rem;
 
+            @include media-lg {
+                display: flex;
+            }
+
+
             &.open {
-                display: none;
+                display: flex;
             }
         }
-        
+
         &__link {
             display: inline-block;
             font-size: 1.5rem;
         }
     }
 }
+
