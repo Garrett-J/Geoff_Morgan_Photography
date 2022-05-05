@@ -324,8 +324,7 @@ h1 {
 
 .bio .bio-body__pic {
   width: auto;
-  height: auto;
-  max-width: 50%;
+  max-width: 50vw;
   align-self: center;
   border-radius: 50%;
   margin: 0 auto;
