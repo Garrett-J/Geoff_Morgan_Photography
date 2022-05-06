@@ -313,7 +313,7 @@ h1 {
 .bio .bio-body {
   padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 @media screen and (min-width: 992px) {
@@ -340,10 +340,10 @@ h1 {
 .bio .bio-body__text {
   color: #e5ecac;
   display: flex;
-  font-size: 2rem;
+  font-size: 1rem;
   padding-right: 1rem;
   align-self: center;
-  line-height: 2.75rem;
+  line-height: 2rem;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 1rem;
@@ -351,6 +351,7 @@ h1 {
 
 @media screen and (min-width: 992px) {
   .bio .bio-body__text {
+    font-size: 1.5rem;
     margin: auto;
     text-align: left;
     line-height: 3.5rem;
@@ -497,8 +498,6 @@ h1 {
 
 .investment {
   padding: 5vh 5vw 5vh 5vw;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
   background-color: #fff;
   color: #34401A;
   display: flex;
@@ -523,9 +522,9 @@ h1 {
   border-style: double;
   border-width: 2px;
   border-color: #252617;
-  padding: 5px 70px 5px;
+  padding: 5px 20px 5px;
   text-align: center;
-  width: 145px;
+  width: 240px;
   display: block;
   overflow: hidden;
 }
@@ -539,7 +538,7 @@ h1 {
 
 .tier .tier-body__price {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .tier .tier-body__text {
