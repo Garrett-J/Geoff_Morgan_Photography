@@ -8,11 +8,11 @@
     width: 100%;
 
     .footer-links {
-        padding: 30px 20px;
+        padding: 30px 30%;
         display: flex;
 
         @include media-lg {
-            padding: 30px 20% 20px;
+            padding: 30px 40% 20px;
         }
 
         &__icon {

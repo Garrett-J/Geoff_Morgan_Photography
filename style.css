@@ -142,13 +142,13 @@
 }
 
 .footer .footer-links {
-  padding: 30px 20px;
+  padding: 30px 30%;
   display: flex;
 }
 
 @media screen and (min-width: 992px) {
   .footer .footer-links {
-    padding: 30px 20% 20px;
+    padding: 30px 40% 20px;
   }
 }
 
@@ -338,7 +338,7 @@ h1 {
 }
 
 .bio .bio-body__text {
-  color: #e5ecac;
+  color: white;
   display: flex;
   font-size: 1rem;
   padding-right: 1rem;
@@ -347,6 +347,7 @@ h1 {
   margin: 0 auto;
   text-align: center;
   padding-bottom: 1rem;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 992px) {
