@@ -60,7 +60,7 @@ h1 {
         }
 
         &__text {
-            color: $primary-text;
+            color: white;
             display: flex;
            font-size: 1rem;
           padding-right: 1rem;
@@ -69,6 +69,7 @@ h1 {
            margin: 0 auto;
            text-align: center;
            padding-bottom: 1rem;
+           font-weight: 300;
 
            @include media-lg {
                font-size: 1.5rem;

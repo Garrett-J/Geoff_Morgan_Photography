@@ -14,16 +14,12 @@
 <html>
 	<div class="footer">
 		<div class="footer-links">
-				<a class="footer-links__icon"  href="https://Facebook.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>../../../img/facebook.png" alt="Facebook"></a>
+				<a class="footer-links__icon" href="https://www.instagram.com/gmorgan_photography/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>../../../img/instagram.png" alt="Instagram"></a>
 
-				<a class="footer-links__icon" href="https://Instagram.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>../../../img/instagram.png" alt="Instagram"></a>
-
-				<a class="footer-links__icon" href="https://Twitter.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>../../../img/twitter.png" alt="Twitter"></a>
-
-				<a class="footer-links__icon" href="https://Gmail.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>../../../img/email.png" alt="Email"></a>
+				<a class="footer-links__icon" href="mailto:gwmorganphotography@gmail.com" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>../../../img/email.png" alt="Email"></a>
 		</div>
 		<div class="footer-info">
-			<p class="footer-info__text"> © Geoff Morgan Photography, 2022  - Made with 🍺 by Garrett Johnson</p>
+			<p class="footer-info__text"> © Geoff Morgan Photography, 2022  - Made by Garrett Johnson</p>
 		</div>
 	</div>
 
