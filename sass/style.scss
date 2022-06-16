@@ -1,295 +1,327 @@
-
-
 @import "nav";
 @import "responsive";
 @import "variables";
 @import "footer";
 @import "slideshow";
 
-
-
 body {
-    margin: 0;
-    height: auto;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
-    color:$light-text;
-    text-decoration: none;
+  color: $light-text;
+  text-decoration: none;
 
-	&:hover{
-    color:$light-text;
-    text-decoration:none;
-    cursor:pointer;
-	}
+  &:hover {
+    color: $light-text;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
-
 
 //BIO SECTION//
 .bio {
-    background-color: $primary-colour;
-    .bio-body {
-        padding: 1rem 2rem;
-        display: flex;
-        flex-direction:column-reverse;
+  background-color: $primary-colour;
+  .bio-body {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
 
-        @include media-lg {
-            flex-direction: row;
-        }
-
-        &__pic {
-            width: auto;
-            max-width: 50vw;
-            align-self: center;
-            border-radius: 50%;
-            margin: 0 auto;
-
-            @include media-lg {
-                margin: auto;
-                max-width: 30%;
-            }
-        }
-
-        &__text {
-            color: white;
-            display: flex;
-           font-size: 1rem;
-          padding-right: 1rem;
-           align-self: center;
-           line-height: 2rem;
-           margin: 0 auto;
-           text-align: center;
-           padding-bottom: 1rem;
-           font-weight: 300;
-
-           @include media-lg {
-               font-size: 1.5rem;
-               margin: auto;
-               text-align: left;
-               line-height: 3.5rem;
-               padding-bottom: 0;
-
-           }
-        }
+    @include media-lg {
+      flex-direction: row;
+      padding: 4rem 10vw;
+      gap: 10vw;
     }
+
+    &__pic {
+      width: auto;
+      max-width: 50vw;
+      align-self: center;
+      border-radius: 50%;
+      margin: 0 auto;
+
+      @include media-lg {
+        margin: auto;
+        max-width: 30%;
+      }
+    }
+
+    &__text {
+      color: white;
+      display: flex;
+      font-size: calc(20px + 0.5vw);
+      padding-right: 1rem;
+      align-self: center;
+      line-height: 2.75rem;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 1rem;
+
+      @include media-lg {
+        margin: auto;
+        text-align: left;
+        line-height: 3.5rem;
+        padding-bottom: 0;
+      }
+    }
+  }
 }
 
 //PORTFOLIO SECTION + _slideshow.scss//
 .portfolio {
-    background-color: $secondary-colour;
-    color: $secondary-text;
+  background-color: $secondary-colour;
+  color: $secondary-text;
+  padding: 4rem 2rem;
+
+  @include media-lg {
+    padding: 4rem 10vw;
+  }
 }
 
 //CONTACT SECTION//
 .contact {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 4rem 2rem;
+  background-color: $primary-colour;
+  color: $primary-text;
 
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 1vh 10vw 5vh;
-    background-color: $primary-colour;
-    color: $primary-text;
+  @include media-lg {
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 4rem 10vw;
+  }
+  .contact-title {
+    padding-top: 1vh;
+    margin: 0 auto;
+    font-size: calc(20px + 0.5vw);
+    text-align: center;
+    line-height: 2.5rem;
 
     @include media-lg {
-        align-items: center;
-        flex-direction: row;
+      text-align: left;
+      width: 35vw;
+      padding-left: 20vw;
+      line-height: 3.5rem;
+      padding-top: 1.5rem;
     }
-    .contact-title {
-        padding-top: 1vh;
-        margin: 0 auto;
-        font-size: 2rem;
-        text-align: center;
-        line-height: 2.75rem;
+  }
 
-        @include media-lg {
-            text-align: left;
-            width: 35vw;
-            padding-left: 20vw;
-            line-height: 3.5rem;
-        }
+  .wpforms-form .wpforms-field-label {
+    display: block;
+    text-align: left;
+    padding-bottom: 1vh;
+    padding-top: 4vh;
+    font-weight: 700;
+
+    @include media-lg {
+      
     }
+  }
 
-    .wpforms-form .wpforms-field-label {
-        display:block;
-        text-align: center;
-        padding-bottom: 1vh;
-        padding-top: 4vh;
-        font-weight: 700;
+  .wpforms-container input[type="date"],
+  .wpforms-container input[type="datetime"],
+  .wpforms-container input[type="datetime-local"],
+  .wpforms-container input[type="email"],
+  .wpforms-container input[type="month"],
+  .wpforms-container input[type="number"],
+  .wpforms-container input[type="password"],
+  .wpforms-container input[type="range"],
+  .wpforms-container input[type="search"],
+  .wpforms-container input[type="tel"],
+  .wpforms-container input[type="text"],
+  .wpforms-container input[type="time"],
+  .wpforms-container input[type="url"],
+  .wpforms-container input[type="week"],
+  .wpforms-container select,
+  .wpforms-container textarea {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px 3px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
 
-        @include media-lg {
-            text-align: left;
-        }
+    @include media-lg {
+      width: 25vw;
+      flex-direction: row;
+      font-size: 16px;
+      padding-right: 3rem;
     }
+  }
 
-    .wpforms-container input[type=date], .wpforms-container input[type=datetime], .wpforms-container input[type=datetime-local], .wpforms-container input[type=email], .wpforms-container input[type=month], .wpforms-container input[type=number], .wpforms-container input[type=password], .wpforms-container input[type=range], .wpforms-container input[type=search], .wpforms-container input[type=tel], .wpforms-container input[type=text], .wpforms-container input[type=time], .wpforms-container input[type=url], .wpforms-container input[type=week], .wpforms-container select, .wpforms-container textarea {
-        font-size: 16px;
-        font-family: 'Montserrat', sans-serif;
-        padding: 5px 3px;
-        width: 100%;
-        margin: 0 auto;
-        border-radius: 10px;
-        border: none;
+  .wpforms-container .wp-forms-field-medium input.wpforms-field-small,
+  .wpforms-container select.wpforms-field-small,
+  .wpforms-container .wpforms-field-row.wpforms-field-small {
+    font-family: "Montserrat", sans-serif;
+    padding: 5px 3px;
+    width: 100%;
+    border: none;
 
-        @include media-lg {
-            width: 25vw;
-            flex-direction: row;
-            font-size: 16px;
-            padding-right: 3rem;
-        }
+    @include media-lg {
+      width: 20vw;
     }
+  }
 
-     .wpforms-container .wp-forms-field-medium input.wpforms-field-small, .wpforms-container select.wpforms-field-small, .wpforms-container .wpforms-field-row.wpforms-field-small {
-        font-family: 'Montserrat', sans-serif;
-        padding: 5px 3px;
-        width: 100%;
-        border: none;
+  .wpforms-form .wpforms-field.wpforms-field-textarea textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 20vh;
+  }
 
-        @include media-lg {
-            width: 20vw;
-        }
-    }
+  .wpforms-submit {
+    display: block;
+    margin: 2vh auto 0 auto;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 550;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    outline: none;
+    color: $secondary-text;
 
-    .wpforms-form .wpforms-field.wpforms-field-textarea textarea {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        width: 100%;
-        border-radius: 10px;
-        border: none;
-        height: 20vh;
-    }
-
-    .wpforms-submit {
-        display: block;
-        margin: 2vh auto 0 auto;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-        font-weight: 550;
-        border: none;
-        border-radius: 40px;
-        cursor: pointer;
-        outline: none;
-        color: $secondary-text;
-
-        &:hover {
-            background-color: $primary-text;
-            transform: translateY(-5px);
-        }
-
-        &:active {
-            transform: translateY(-1px);
-        }
-    }
-
-    .wpforms-container label.wpforms-error {
-        display: block;
-        padding-top: 1vh;
-        text-align: center;
-
-        @include media-lg {
-            text-align: left;
-        }
+    &:hover {
+      background-color: $primary-text;
+      transform: translateY(-5px);
     }
 
-    .wpforms-field-limit-text {
-        padding-bottom: 1vh;
-        text-align: center;
-
-        @include media-lg {
-            text-align: left;
-        }
+    &:active {
+      transform: translateY(-1px);
     }
+  }
+
+  .wpforms-container label.wpforms-error {
+    display: block;
+    padding-top: 1vh;
+    text-align: center;
+
+    @include media-lg {
+      text-align: left;
+    }
+  }
+
+  .wpforms-field-limit-text {
+    padding-bottom: 1vh;
+    text-align: center;
+
+    @include media-lg {
+      text-align: left;
+    }
+  }
 }
 
 //INVESTMENT SECTION//
 .investment {
-    padding: 5vh 5vw 5vh 5vw;
-    background-color: $secondary-colour;
-    color: $secondary-text;
-    display: flex;
-    flex-direction: column;
+  padding: 4rem 2rem;
+  background-color: $secondary-colour;
+  color: $secondary-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @include media-lg {
-        flex-direction: row;
-    }
+  @include media-lg {
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 0;
+    height: auto;
+    justify-content: space-evenly;
+  }
 }
-
 
 .tier-wrapper {
-    margin: 0 auto;
-    padding-right:5px;
-    padding-left:5px;
+  display: flex;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 .tier {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-style: double;
-    border-width: 2px;
-    border-color: $primary-colour;
-    padding: 5px 20px 5px;
-    text-align: center;
-    width: 240px;
-    display:block;
-    overflow: hidden;
-    
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-style: double;
+  border-width: 2px;
+  border-color: $primary-colour;
+  padding: 5px 20px 5px;
+  text-align: center;
+  width: 250px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
-    @include media-lg {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
+  @include media-lg {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
-        .tier-body__price {
-            font-weight: 900;
-            font-size:30px;
+  .tier-price {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+      display: flex;
+      font-weight: 900;
+      font-size: 26px;
     }
-        .tier-body__text {
-            font-weight: 500;
-            line-height: 1.5rem;
-            display: flex;
-        }
+  }
+  .tier-description {
+    display: flex;
+
+    &__text {
+      display: flex;
+      font-weight: 500;
+      line-height: 1.5rem;
+    }
+  }
 }
-
 
 //PORTFOLIO PAGE//
 
 .row {
-    line-height:0;
-   -webkit-column-count:1;
-   -webkit-column-gap:5px;
-   -moz-column-count:1;
-   -moz-column-gap:5px;
-   column-count:1;
-   column-gap:5px;
+  line-height: 0;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 1;
+  -moz-column-gap: 5px;
+  column-count: 1;
+  column-gap: 5px;
 
-   @include media-md {
-    -webkit-column-count:2;
-    -moz-column-count:2;
-    column-count:2;
-   }
+  @include media-md {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
 
-   @include media-lg {
-    -webkit-column-count:3;
-    -moz-column-count:3;
-    column-count:3;
-   }
+  @include media-lg {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
 
-   @include media-xl {
-    -webkit-column-count:4;
-    -moz-column-count:4;
-    column-count:4;
-   }
+  @include media-xl {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+  }
 
-   .row-img {
-       width: 100%;
-       height: auto;
-       margin-bottom: 5px;
-   }
+  .row-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
 }
-

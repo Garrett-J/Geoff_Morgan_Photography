@@ -1,40 +1,39 @@
 @import "variables";
 
 @include media-lg {
-    .menu-btn {
-        visibility: hidden;
-    }
-    .nav {
-        top: 0;
-        left: 0;
-        width: 100vw;
-        max-width: 100%;
-        position: relative;
-        background: $dark-color;
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+    background: $dark-color;
 
-        .menu-nav {
-            padding: 1rem 0 1rem 0;
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: right;
-            padding-right: 1rem;
-            overflow: hidden;
+    .menu-nav {
+      padding: 1rem 0 1rem 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      padding-right: 1rem;
+      overflow: hidden;
 
-            &__item {
-                list-style-type: none;
-                padding: 0 2rem;
+      &__item {
+        list-style-type: none;
+        padding: 0 2rem;
 
-                &.open {
-                    display: flex;
-                }
-            }
-
-            &__link {
-                display: inline-block;
-                font-size: 1.5rem;
-            }
+        &.open {
+          display: flex;
         }
-    }
-}
+      }
 
+      &__link {
+        display: inline-block;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

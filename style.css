@@ -20,25 +20,25 @@
   top: 0.8rem;
   width: 25px;
   height: 3px;
-  background-color: #B4BF5E;
+  background-color: #b4bf5e;
 }
 
 .menu-btn__line::before {
   position: absolute;
-  content: '';
+  content: "";
   top: -8px;
   width: 30px;
   height: 3px;
-  background-color: #B4BF5E;
+  background-color: #b4bf5e;
 }
 
 .menu-btn__line::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 8px;
   width: 30px;
   height: 3px;
-  background-color: #B4BF5E;
+  background-color: #b4bf5e;
 }
 
 .logo {
@@ -48,11 +48,11 @@
   right: 1rem;
   top: 1rem;
   padding-bottom: 2rem;
-  padding-right: 7rem;
+  padding-right: 5rem;
 }
 
 .logo .logo-text {
-  color: #B4BF5E;
+  color: #b4bf5e;
   font-size: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -172,9 +172,8 @@
   max-width: 50vw;
   position: relative;
   margin: auto;
-  padding-top: 3rem;
   background-color: #fff;
-  color: #34401A;
+  color: #34401a;
 }
 
 @media screen and (min-width: 992px) {
@@ -187,7 +186,8 @@
   display: none;
 }
 
-.slideshow .prev, .slideshow .next {
+.slideshow .prev,
+.slideshow .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -201,7 +201,8 @@
   user-select: none;
 }
 
-.slideshow .prev:hover, .slideshow .next:hover {
+.slideshow .prev:hover,
+.slideshow .next:hover {
   background-color: #000000;
   opacity: 0.7;
 }
@@ -236,11 +237,10 @@
 
 .dot button {
   background-color: #fff;
-  color: #34401A;
+  color: #34401a;
   border: 3px solid #252617;
   padding: 10px 5px;
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
   font-size: 20px;
   border-radius: 12px;
   cursor: pointer;
@@ -268,7 +268,7 @@
 
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -284,16 +284,16 @@ img {
 body {
   margin: 0;
   height: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
-  color: #B4BF5E;
+  color: #b4bf5e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #B4BF5E;
+  color: #b4bf5e;
   text-decoration: none;
   cursor: pointer;
 }
@@ -311,14 +311,17 @@ h1 {
 }
 
 .bio .bio-body {
-  padding: 1rem 2rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column-reverse;
+  gap: 4rem;
 }
 
 @media screen and (min-width: 992px) {
   .bio .bio-body {
     flex-direction: row;
+    padding: 4rem 10vw;
+    gap: 10vw;
   }
 }
 
@@ -340,19 +343,17 @@ h1 {
 .bio .bio-body__text {
   color: white;
   display: flex;
-  font-size: 1rem;
+  font-size: calc(20px + 0.5vw);
   padding-right: 1rem;
   align-self: center;
-  line-height: 2rem;
+  line-height: 2.75rem;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 1rem;
-  font-weight: 300;
 }
 
 @media screen and (min-width: 992px) {
   .bio .bio-body__text {
-    font-size: 1.5rem;
     margin: auto;
     text-align: left;
     line-height: 3.5rem;
@@ -362,30 +363,38 @@ h1 {
 
 .portfolio {
   background-color: #fff;
-  color: #34401A;
+  color: #34401a;
+  padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .portfolio {
+    padding: 4rem 10vw;
+  }
 }
 
 .contact {
   display: flex;
   flex-direction: column-reverse;
-  padding: 1vh 10vw 5vh;
+  padding: 4rem 2rem;
   background-color: #252617;
   color: #e5ecac;
 }
 
 @media screen and (min-width: 992px) {
   .contact {
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
+    padding: 4rem 10vw;
   }
 }
 
 .contact .contact-title {
   padding-top: 1vh;
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: calc(20px + 0.5vw);
   text-align: center;
-  line-height: 2.75rem;
+  line-height: 2.5rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -394,26 +403,36 @@ h1 {
     width: 35vw;
     padding-left: 20vw;
     line-height: 3.5rem;
+    padding-top: 1.5rem;
   }
 }
 
 .contact .wpforms-form .wpforms-field-label {
   display: block;
-  text-align: center;
+  text-align: left;
   padding-bottom: 1vh;
   padding-top: 4vh;
   font-weight: 700;
 }
 
-@media screen and (min-width: 992px) {
-  .contact .wpforms-form .wpforms-field-label {
-    text-align: left;
-  }
-}
-
-.contact .wpforms-container input[type=date], .contact .wpforms-container input[type=datetime], .contact .wpforms-container input[type=datetime-local], .contact .wpforms-container input[type=email], .contact .wpforms-container input[type=month], .contact .wpforms-container input[type=number], .contact .wpforms-container input[type=password], .contact .wpforms-container input[type=range], .contact .wpforms-container input[type=search], .contact .wpforms-container input[type=tel], .contact .wpforms-container input[type=text], .contact .wpforms-container input[type=time], .contact .wpforms-container input[type=url], .contact .wpforms-container input[type=week], .contact .wpforms-container select, .contact .wpforms-container textarea {
+.contact .wpforms-container input[type="date"],
+.contact .wpforms-container input[type="datetime"],
+.contact .wpforms-container input[type="datetime-local"],
+.contact .wpforms-container input[type="email"],
+.contact .wpforms-container input[type="month"],
+.contact .wpforms-container input[type="number"],
+.contact .wpforms-container input[type="password"],
+.contact .wpforms-container input[type="range"],
+.contact .wpforms-container input[type="search"],
+.contact .wpforms-container input[type="tel"],
+.contact .wpforms-container input[type="text"],
+.contact .wpforms-container input[type="time"],
+.contact .wpforms-container input[type="url"],
+.contact .wpforms-container input[type="week"],
+.contact .wpforms-container select,
+.contact .wpforms-container textarea {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 5px 3px;
   width: 100%;
   margin: 0 auto;
@@ -422,7 +441,22 @@ h1 {
 }
 
 @media screen and (min-width: 992px) {
-  .contact .wpforms-container input[type=date], .contact .wpforms-container input[type=datetime], .contact .wpforms-container input[type=datetime-local], .contact .wpforms-container input[type=email], .contact .wpforms-container input[type=month], .contact .wpforms-container input[type=number], .contact .wpforms-container input[type=password], .contact .wpforms-container input[type=range], .contact .wpforms-container input[type=search], .contact .wpforms-container input[type=tel], .contact .wpforms-container input[type=text], .contact .wpforms-container input[type=time], .contact .wpforms-container input[type=url], .contact .wpforms-container input[type=week], .contact .wpforms-container select, .contact .wpforms-container textarea {
+  .contact .wpforms-container input[type="date"],
+  .contact .wpforms-container input[type="datetime"],
+  .contact .wpforms-container input[type="datetime-local"],
+  .contact .wpforms-container input[type="email"],
+  .contact .wpforms-container input[type="month"],
+  .contact .wpforms-container input[type="number"],
+  .contact .wpforms-container input[type="password"],
+  .contact .wpforms-container input[type="range"],
+  .contact .wpforms-container input[type="search"],
+  .contact .wpforms-container input[type="tel"],
+  .contact .wpforms-container input[type="text"],
+  .contact .wpforms-container input[type="time"],
+  .contact .wpforms-container input[type="url"],
+  .contact .wpforms-container input[type="week"],
+  .contact .wpforms-container select,
+  .contact .wpforms-container textarea {
     width: 25vw;
     flex-direction: row;
     font-size: 16px;
@@ -430,21 +464,25 @@ h1 {
   }
 }
 
-.contact .wpforms-container .wp-forms-field-medium input.wpforms-field-small, .contact .wpforms-container select.wpforms-field-small, .contact .wpforms-container .wpforms-field-row.wpforms-field-small {
-  font-family: 'Montserrat', sans-serif;
+.contact .wpforms-container .wp-forms-field-medium input.wpforms-field-small,
+.contact .wpforms-container select.wpforms-field-small,
+.contact .wpforms-container .wpforms-field-row.wpforms-field-small {
+  font-family: "Montserrat", sans-serif;
   padding: 5px 3px;
   width: 100%;
   border: none;
 }
 
 @media screen and (min-width: 992px) {
-  .contact .wpforms-container .wp-forms-field-medium input.wpforms-field-small, .contact .wpforms-container select.wpforms-field-small, .contact .wpforms-container .wpforms-field-row.wpforms-field-small {
+  .contact .wpforms-container .wp-forms-field-medium input.wpforms-field-small,
+  .contact .wpforms-container select.wpforms-field-small,
+  .contact .wpforms-container .wpforms-field-row.wpforms-field-small {
     width: 20vw;
   }
 }
 
 .contact .wpforms-form .wpforms-field.wpforms-field-textarea textarea {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   width: 100%;
   border-radius: 10px;
@@ -462,7 +500,7 @@ h1 {
   border-radius: 40px;
   cursor: pointer;
   outline: none;
-  color: #34401A;
+  color: #34401a;
 }
 
 .contact .wpforms-submit:hover {
@@ -498,21 +536,27 @@ h1 {
 }
 
 .investment {
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 4rem 2rem;
   background-color: #fff;
-  color: #34401A;
+  color: #34401a;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 992px) {
   .investment {
     flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 0;
+    height: auto;
+    justify-content: space-evenly;
   }
 }
 
 .tier-wrapper {
-  margin: 0 auto;
+  display: flex;
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -525,9 +569,11 @@ h1 {
   border-color: #252617;
   padding: 5px 20px 5px;
   text-align: center;
-  width: 240px;
-  display: block;
+  width: 250px;
+  height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 992px) {
@@ -537,15 +583,25 @@ h1 {
   }
 }
 
-.tier .tier-body__price {
-  font-weight: 900;
-  font-size: 30px;
+.tier .tier-price {
+  display: flex;
+  justify-content: center;
 }
 
-.tier .tier-body__text {
+.tier .tier-price__text {
+  display: flex;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.tier .tier-description {
+  display: flex;
+}
+
+.tier .tier-description__text {
+  display: flex;
   font-weight: 500;
   line-height: 1.5rem;
-  display: flex;
 }
 
 .row {

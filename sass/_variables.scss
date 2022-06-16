@@ -1,31 +1,29 @@
 $primary-text: #e5ecac;
-$secondary-text: #34401A;
-$light-text: #B4BF5E;
+$secondary-text: #34401a;
+$light-text: #b4bf5e;
 
 $primary-colour: #252617;
 $secondary-colour: #fff;
 $dark-color: #0f0f09;
 
-
 //Tablet//
 @mixin media-md {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
+  @media screen and (min-width: 768px) {
+    @content;
+  }
 }
 
 //Desktop//
 @mixin media-lg {
-    @media screen and (min-width: 992px) {
-        @content;
-    }
+  @media screen and (min-width: 992px) {
+    @content;
+  }
 }
 
 //Wide Screen//
 @mixin media-xl {
-    @media screen and (min-width: 1200px) {
-        @content;
-    }
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");

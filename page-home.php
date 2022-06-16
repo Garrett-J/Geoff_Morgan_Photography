@@ -1,17 +1,4 @@
 <?php
-/**
- * The template for displaying all pages
- *"<?php echo get_stylesheet_directory_uri(); ?>../../../img/geoff.png"
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package gmp
- */
-
 get_header();
 ?>
 <html>
@@ -42,11 +29,11 @@ get_header();
             </li>
 		</ul>
         </nav>
+
 <section class="bio">
 <div class="bio-body">
 <h3 class="bio-body__text"><?php the_field('bio_text'); ?></h3>
 <img src="<?php the_field('bio_pic'); ?>" class="bio-body__pic">
-
     </div>
 </section>
 
@@ -76,53 +63,56 @@ get_header();
 </section>
 
 <section class="contact" id="contact">
-<?php echo do_shortcode('[wpforms id="16"]');?>
-<h3 class="contact-title"><?php the_field('contact_text'); ?></h3>
+    <?php echo do_shortcode('[wpforms id="16"]');?>
+    <h3 class="contact-title"><?php the_field('contact_text'); ?></h3>
 </section>
 
 <section class="investment" id="investment">
+    <div class="tier-wrapper">
+        <div class="tier">
+            <div class="tier-header">
+                <h3 class="tier-header_title"><?php the_field('investment_title_1'); ?></h3>
+            </div>
+            <div class="tier-price">
+                <h2 class="tier-price__text"><?php the_field('investment_price_1'); ?></h2>
+            </div>
+            <div class="tier-description">
+                <p class="tier-description__text"><?php the_field('investment_body_1'); ?></p>
+            </div>
+        </div>
+    </div>
 
+    <div class="tier-wrapper">
+        <div class="tier">
+            <div class="tier-header">
+                <h3 class="tier-header_title"><?php the_field('investment_title_2'); ?></h3>
+            </div>
+            <div class="tier-price">
+                <h2 class="tier-price__text"><?php the_field('investment_price_2'); ?></h2>
+            </div>
+            <div class="tier-description">
+                <p class="tier-description__text"><?php the_field('investment_body_2'); ?></p>
+            </div>
+        </div>
+    </div>
 
-<div class="tier-wrapper">
-<div class="tier">
-    <div class="tier-header">
-        <h3 class="tier-header_title"><?php the_field('investment_title_1'); ?></h3>
+    <div class="tier-wrapper">
+        <div class="tier">
+            <div class="tier-header">
+                <h3 class="tier-header_title"><?php the_field('investment_title_3'); ?></h3>
+            </div>
+            <div class="tier-price">
+                <h2 class="tier-price__text"><?php the_field('investment_price_3'); ?></h2>
+            </div>
+            <div class="tier-description">
+                <p class="tier-description__text"><?php the_field('investment_body_3'); ?></p>
+            </div>
+        </div>
     </div>
-    <div class="tier-body">
-        <h2 class="tier-body__price"><?php the_field('investment_price_1'); ?></h2>
-        <p class="tier-body__text"><?php the_field('investment_body_1'); ?></p>
-    </div>
-</div>
-</div>
-<div class="tier-wrapper">
-<div class="tier">
-    <div class="tier-header">
-        <h3 class="tier-header_title"><?php the_field('investment_title_2'); ?></h3>
-    </div>
-    <div class="tier-body">
-        <h2 class="tier-body__price"><?php the_field('investment_price_2'); ?></h2>
-        <p class="tier-body__text"><?php the_field('investment_body_2'); ?></p>
-    </div>
-</div>
-</div>
-
-<div class="tier-wrapper">
-<div class="tier">
-    <div class="tier-header">
-        <h3 class="tier-header_title"><?php the_field('investment_title_3'); ?></h3>
-    </div>
-    <div class="tier-body">
-        <h2 class="tier-body__price"><?php the_field('investment_price_3'); ?></h2>
-        <p class="tier-body__text"><?php the_field('investment_body_3'); ?></p>
-    </div>
-</div>
-</div>
-
 </section>
 
 </body>
 </html>
-
 
 <?php
 get_footer();
