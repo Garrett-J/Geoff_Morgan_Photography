@@ -1,8 +1,8 @@
 ## Geoff Morgan Photography
 
-About: Photography landing page and portfolio for a client.
+Photography landing page and portfolio for a client.
 
-How to access: https://geoffmorganphotography.com
+https://geoffmorganphotography.com
 
 
 
